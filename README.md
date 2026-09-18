@@ -2,9 +2,36 @@
 
 MCP server for **searching and retrieving** the Wahlprogramme (election platforms) of all **19** parties admitted to the **Landtagswahl Mecklenburg-Vorpommern 2026**.
 
-This is **retrieval only** — not a Wahl-O-Mat clone and not a voting recommender. Do not use it to compute “closeness” scores from user positions.
+This is **retrieval only** — not a Wahl-O-Mat clone and not a voting recommender. Do not use it to compute "closeness" scores from user positions.
 
 Built for Martin Müller / Remington S.: let a KI browse full party programmes (primary) plus the official bpb Wahl-O-Mat MV 2026 theses & answers (secondary corpus).
+
+## Quick start
+
+```bash
+git clone https://github.com/voundbrand/mv-wahl-mcp.git
+cd mv-wahl-mcp
+./run.sh
+```
+
+That's it. The script creates a virtual environment if needed, installs dependencies, and starts the MCP server. The pre-built search index is included — no rebuild required.
+
+**Requirements:** Python 3.11+
+
+## Add to Cursor or Claude Desktop
+
+Run `./run.sh --print-config` to get a ready-to-paste MCP configuration:
+
+```bash
+./run.sh --print-config
+```
+
+Copy the output into your MCP config file:
+
+- **Cursor:** `~/.cursor/mcp.json` or `.cursor/mcp.json` in your project
+- **Claude Desktop:** `claude_desktop_config.json`
+
+If you already have other MCP servers configured, merge the `mv-wahl` entry into your existing `mcpServers` object.
 
 ## Features
 
@@ -20,69 +47,17 @@ Corpora:
 - `programme` — full / website-captured Wahlprogramme (primary)
 - `wahlomat` — bpb Wahl-O-Mat MV 2026 dataset (theses + party answers)
 
-## Quick start
+## Test search without MCP
 
 ```bash
-python3 -m venv .venv
+./run.sh &  # or skip if you just want to test the search module
+cd mv-wahl-mcp
 source .venv/bin/activate
-pip install -r requirements.txt
-pip install -e .
-
-# Rebuild FTS index from extracted texts + Wahl-O-Mat xlsx
-python scripts/build_index.py
-
-# Run MCP server (stdio)
-python -m mv_wahl_mcp.server
-# or:
-mv-wahl-mcp
-```
-
-Smoke-test search without MCP:
-
-```bash
 python -c "
 from mv_wahl_mcp.search import search_programmes
 import json
 print(json.dumps(search_programmes('Wohnungsbau', limit=5), ensure_ascii=False, indent=2))
 "
-```
-
-## Cursor / Claude Desktop MCP config
-
-### Cursor (`~/.cursor/mcp.json` or project `.cursor/mcp.json`)
-
-```json
-{
-  "mcpServers": {
-    "mv-wahl": {
-      "command": "/ABSOLUTE/PATH/mv-wahl-mcp/.venv/bin/python",
-      "args": ["-m", "mv_wahl_mcp.server"],
-      "cwd": "/ABSOLUTE/PATH/mv-wahl-mcp",
-      "env": {
-        "PYTHONPATH": "/workspace/mv-wahl-mcp/src"
-      }
-    }
-  }
-}
-```
-
-If you move the project, point `command` / `cwd` at your local clone and use that venv’s Python.
-
-### Claude Desktop (`claude_desktop_config.json`)
-
-```json
-{
-  "mcpServers": {
-    "mv-wahl": {
-      "command": "/ABSOLUTE/PATH/mv-wahl-mcp/.venv/bin/python",
-      "args": ["-m", "mv_wahl_mcp.server"],
-      "cwd": "/ABSOLUTE/PATH/mv-wahl-mcp",
-      "env": {
-        "PYTHONPATH": "/ABSOLUTE/PATH/mv-wahl-mcp/src"
-      }
-    }
-  }
-}
 ```
 
 ## Data layout
@@ -93,7 +68,7 @@ data/
   programmes/           # PDF sources
   programmes_text/      # pdftotext extracts
   wahlomat/             # bpb Datensatz zip + xlsx
-  index.db              # SQLite + FTS5 (built by scripts/build_index.py)
+  index.db              # SQLite + FTS5 (pre-built, ready to use)
 ```
 
 ### Wahl-O-Mat dataset
@@ -113,7 +88,9 @@ Prefer official party / Landesverband PDFs where available. Many smaller parties
 
 See `data/parties.json` and the `coverage_status` tool for per-party notes. Short / website-captured texts (e.g. Die PARTEI, WLD, Team Freiheit, Handwerker 10-Punkte) are documented honestly.
 
-## Re-extract / re-index
+## Re-extract / re-index (optional)
+
+Only needed if you modify the source PDFs or Wahl-O-Mat data:
 
 ```bash
 # Needs poppler-utils (pdftotext)
@@ -129,14 +106,6 @@ python scripts/build_index.py
 - Party programmes remain copyright of the respective parties.
 - Wahl-O-Mat dataset © Bundeszentrale für politische Bildung — see `data/wahlomat/Hinweis.txt`.
 - This tool must not be turned into a proximity/voting recommender.
-
-## Start command (summary)
-
-```bash
-./run.sh
-```
-
-Or via Cursor MCP config pointing at `./run.sh` (or the venv python `-m mv_wahl_mcp.server`).
 
 ## Coverage (build-time snapshot)
 
