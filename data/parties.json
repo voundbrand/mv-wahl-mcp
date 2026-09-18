@@ -1,0 +1,192 @@
+[
+  {
+    "id": "SPD",
+    "short_name": "SPD",
+    "full_name": "Sozialdemokratische Partei Deutschlands",
+    "text_file": "SPD.txt",
+    "pdf_file": "SPD.pdf",
+    "source_url": "https://spd-mv.de/uploads/bilderpool/2-Mecklenburg-Vorpommern/Wahlen-und-Kandidaturen/2026-Landtagswahlen/SPD_MV_Programm_2026.pdf",
+    "source_note": "Official SPD MV Regierungsprogramm 2026–2031 (also mirrored via schwerin.news)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-spd.pdf"
+  },
+  {
+    "id": "AfD",
+    "short_name": "AfD",
+    "full_name": "Alternative für Deutschland",
+    "text_file": "AfD.txt",
+    "pdf_file": "AfD.pdf",
+    "source_url": "https://afd-mv.de/wp-content/uploads/2026/06/AfD-Regierungsprogramm-Mecklenburg-Vorpommern-2026.pdf",
+    "source_note": "Official AfD MV Regierungsprogramm (also mirrored via schwerin.news)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-afd.pdf"
+  },
+  {
+    "id": "CDU",
+    "short_name": "CDU",
+    "full_name": "Christlich Demokratische Union Deutschlands",
+    "text_file": "CDU.txt",
+    "pdf_file": "CDU.pdf",
+    "source_url": "https://cdu-mv.de/wp-content/uploads/2026/06/Wahlprogramm-CDU-MV-2026.pdf",
+    "source_note": "Official CDU MV Wahlprogramm (also mirrored via schwerin.news)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-cdu.pdf"
+  },
+  {
+    "id": "Die_Linke",
+    "short_name": "Die Linke",
+    "full_name": "Die Linke",
+    "text_file": "Die_Linke.txt",
+    "pdf_file": "Die_Linke.pdf",
+    "source_url": "https://wahlprogramm26.die-linke-mv.de/",
+    "source_note": "Official Die Linke MV Landtagswahlprogramm PDF via party site (mirrored via schwerin.news)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-die-linke.pdf"
+  },
+  {
+    "id": "GRUENE",
+    "short_name": "GRÜNE",
+    "full_name": "BÜNDNIS 90/DIE GRÜNEN",
+    "text_file": "GRUENE.txt",
+    "pdf_file": "GRUENE.pdf",
+    "source_url": "https://gruene-mv.de/download/programm-zur-landtagswahl-2026/",
+    "source_note": "Official GRÜNE MV Programm (mirrored via schwerin.news)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-gruene.pdf"
+  },
+  {
+    "id": "FDP",
+    "short_name": "FDP",
+    "full_name": "Freie Demokratische Partei",
+    "text_file": "FDP.txt",
+    "pdf_file": "FDP.pdf",
+    "source_url": "https://www.fdp-mv.de/sites/default/files/2026-06/Landtagswahlprogramm_2026_0.pdf",
+    "source_note": "Official FDP MV Landtagswahlprogramm (also mirrored via schwerin.news)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-fdp.pdf"
+  },
+  {
+    "id": "Tierschutzpartei",
+    "short_name": "Tierschutzpartei",
+    "full_name": "PARTEI MENSCH KLIMA TIERSCHUTZ",
+    "text_file": "Tierschutzpartei.txt",
+    "pdf_file": "Tierschutzpartei.pdf",
+    "source_url": "https://www.tierschutzpartei.de/wp-content/uploads/2026/08/Landtagswahlprogramm-2026-Mecklenburg-Vorpommern-Tierschutzpartei.pdf",
+    "source_note": "Official Tierschutzpartei MV programme (also mirrored via schwerin.news)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-tierschutzpartei.pdf"
+  },
+  {
+    "id": "FREIE_WAEHLER",
+    "short_name": "FREIE WÄHLER",
+    "full_name": "FREIE WÄHLER",
+    "text_file": "FREIE_WAEHLER.txt",
+    "pdf_file": "FREIE_WAEHLER.pdf",
+    "source_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-freie-waehler.pdf",
+    "source_note": "Programme PDF collected via schwerin.news aggregation (Aug 2026)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-freie-waehler.pdf"
+  },
+  {
+    "id": "Die_PARTEI",
+    "short_name": "Die PARTEI",
+    "full_name": "Die PARTEI",
+    "text_file": "Die_PARTEI.txt",
+    "pdf_file": "Die_PARTEI.pdf",
+    "source_url": "https://diepartei-mv.de/Programm.html",
+    "source_note": "Website programme captured as PDF by schwerin.news (party publishes HTML, not a long PDF)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-die-partei-_-website.pdf"
+  },
+  {
+    "id": "PIRATEN",
+    "short_name": "PIRATEN",
+    "full_name": "Piratenpartei Deutschland",
+    "text_file": "PIRATEN.txt",
+    "pdf_file": "PIRATEN.pdf",
+    "source_url": "https://piratenpartei-mv.de/wp-content/uploads/2026/04/finalwp2026_lek.pdf",
+    "source_note": "Official PIRATEN MV Wahlprogramm (also mirrored via schwerin.news)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-piraten-piratenpartein-mv.pdf"
+  },
+  {
+    "id": "OEDP",
+    "short_name": "ÖDP",
+    "full_name": "Ökologisch-Demokratische Partei",
+    "text_file": "OEDP.txt",
+    "pdf_file": "OEDP.pdf",
+    "source_url": "https://schwerin.news/wp-content/uploads/2026/08/walprogramm-oedp.pdf",
+    "source_note": "Programme PDF via schwerin.news (filename typo 'walprogramm' on aggregator)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/walprogramm-oedp.pdf"
+  },
+  {
+    "id": "Buendnis_C",
+    "short_name": "Bündnis C",
+    "full_name": "Bündnis C – Christen für Deutschland",
+    "text_file": "Buendnis_C.txt",
+    "pdf_file": "Buendnis_C.pdf",
+    "source_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-buendnis-c.pdf",
+    "source_note": "Programme PDF via schwerin.news aggregation",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-buendnis-c.pdf"
+  },
+  {
+    "id": "BSW",
+    "short_name": "BSW",
+    "full_name": "Bündnis Sahra Wagenknecht",
+    "text_file": "BSW.txt",
+    "pdf_file": "BSW.pdf",
+    "source_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-bsw.pdf",
+    "source_note": "Landeswahlprogramm via schwerin.news aggregation",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-bsw.pdf"
+  },
+  {
+    "id": "Handwerker",
+    "short_name": "Handwerker Partei Deutschland",
+    "full_name": "Handwerker Partei Deutschland",
+    "text_file": "Handwerker.txt",
+    "pdf_file": "Handwerker.pdf",
+    "source_url": "https://www.handwerkerparteideutschland.com/unsere-landesverbaende/mecklenburg-vorpommern",
+    "source_note": "Short 10-point programme PDF via schwerin.news; party site describes MV Landesverband but no separate long PDF found",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-handwerkerpartei.pdf"
+  },
+  {
+    "id": "KPD",
+    "short_name": "KPD",
+    "full_name": "Kommunistische Partei Deutschlands",
+    "text_file": "KPD.txt",
+    "pdf_file": "KPD.pdf",
+    "source_url": "http://k-p-d.org/images/daten/k-p-d/wahlen/ltw_mecklenburg-vorpommern_2026/2026_KPD-Wahlprogramm-LTW-Mecklenburg-Vorpommern.pdf",
+    "source_note": "Official KPD Wahlprogramm PDF from k-p-d.org",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/kpd-wahlprogramm.pdf"
+  },
+  {
+    "id": "PdF",
+    "short_name": "PdF",
+    "full_name": "Partei des Fortschritts",
+    "text_file": "PdF.txt",
+    "pdf_file": "PdF.pdf",
+    "source_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-partei-pdf.pdf",
+    "source_note": "Programme PDF via schwerin.news aggregation",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-partei-pdf.pdf"
+  },
+  {
+    "id": "Team_Freiheit",
+    "short_name": "Team Freiheit",
+    "full_name": "Team Freiheit",
+    "text_file": "Team_Freiheit.txt",
+    "pdf_file": "Team_Freiheit.pdf",
+    "source_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-team-freiheit-_-website.pdf",
+    "source_note": "Website content captured as PDF by schwerin.news (no long standalone PDF found)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-team-freiheit-_-website.pdf"
+  },
+  {
+    "id": "Volt",
+    "short_name": "Volt",
+    "full_name": "Volt Deutschland",
+    "text_file": "Volt.txt",
+    "pdf_file": "Volt.pdf",
+    "source_url": "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf",
+    "source_note": "Official Volt MV Wahlprogramm „Haltung zeigen!“ (also mirrored via schwerin.news)",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-volt.pdf"
+  },
+  {
+    "id": "WLD",
+    "short_name": "WIR LEBEN DEMOKRATIE (WLD)",
+    "full_name": "WIR LEBEN DEMOKRATIE",
+    "text_file": "WLD.txt",
+    "pdf_file": "WLD.pdf",
+    "source_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-wld-_-website.pdf",
+    "source_note": "Website content captured as PDF by schwerin.news",
+    "mirror_url": "https://schwerin.news/wp-content/uploads/2026/08/wahlprogramm-wld-_-website.pdf"
+  }
+]

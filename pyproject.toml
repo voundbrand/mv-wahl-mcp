@@ -1,0 +1,21 @@
+[project]
+name = "mv-wahl-mcp"
+version = "0.1.0"
+description = "MCP server to search Mecklenburg-Vorpommern 2026 Landtagswahl party programmes"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp[cli]>=2.0.0",
+  "openpyxl>=3.1.0",
+  "pypdf>=4.0.0",
+]
+
+[project.scripts]
+mv-wahl-mcp = "mv_wahl_mcp.server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
